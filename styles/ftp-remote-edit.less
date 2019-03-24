@@ -73,6 +73,38 @@
     bottom: 27px;
   }
 
+  .ftp-remote-edit-select-view {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display:block;
+    height: 27px;
+
+    &:not(.hidden) + .ftp-remote-edit-scroller {
+        top: 27px;
+        margin-top:5px;
+    }
+
+    .form-control {
+      font-size: 1em;
+    }
+
+    select.form-control {
+      background-color: @base-background-color;
+      color: #dbdbdb;
+      border: 1px solid @base-border-color;
+      border-left:0;
+      border-right:0;
+      border-radius: 0;
+    }
+
+    atom-text-editor.form-control {
+      font-family: inherit;
+      max-height: inherit;
+    }
+  }
+
   .ftp-remote-edit-queue {
     position: absolute;
     left: 0;
@@ -274,7 +306,7 @@
       }
     }
   }
-  
+
   .folder {
     height: 30px;
 

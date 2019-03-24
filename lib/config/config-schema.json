@@ -93,6 +93,13 @@
         "type": "boolean",
         "default": true,
         "order": 9
+      },
+      "showSelectOnTop": {
+        "title": "Show select for folders and servers on top of tree view",
+        "description": "Showing selector of servers and folders on top of tree view, allowing for showing only selected one on it.",
+        "type": "boolean",
+        "default": true,
+        "order": 10
       }
     },
     "order": 5
